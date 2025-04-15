@@ -1,4 +1,3 @@
-// console.log('Hello Backend Services!!!!!!');
 
 require('dotenv').config()
 const express = require('express')
