@@ -2,9 +2,9 @@
   "name": "vivekbackend",
   "version": "1.0.0",
   "description": "backend services",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node src server.js",
+    "start": "node ./src/server.js",
     "build": "babel src -d dist"
   },
   "keywords": [
