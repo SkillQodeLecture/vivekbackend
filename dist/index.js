@@ -1,14 +1,15 @@
 let http = require('http');
 let fs = require('fs');
 let port = 4000;
-const request = (req, res) => {
+const requestUrl = (req, res) => {
   let filename = "";
+  console.log(req.url);
   switch (req.url) {
     case '/':
-      filename = '../index.html';
+      filename = './src/index.html';
       break;
     case '/home':
-      filename = '../home.html';
+      filename = './src/home.html';
       break;
   }
   fs.readFile(filename, (error, result) => {
@@ -17,7 +18,7 @@ const request = (req, res) => {
     }
   });
 };
-const server = http.createServer(request);
+const server = http.createServer(requestUrl);
 server.listen(port, error => {
   if (!error) {
     console.log(`nodejs server start on port ${port}`);
