@@ -1,26 +1,13 @@
 {
   "name": "vivekbackend",
   "version": "1.0.0",
-  "description": "backend services",
-  "main": "server.js",
-  "scripts": {
-    "start": "node ./src/server.js",
-    "build": "babel src -d dist"
-  },
-  "keywords": [
-    "node",
-    "express",
-    "mongoose"
-  ],
-  "author": "",
+  "description": "node application",
   "license": "ISC",
-  "dependencies": {
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.27.0",
-    "@babel/core": "^7.26.10",
-    "@babel/preset-env": "^7.26.9"
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
   }
 }
