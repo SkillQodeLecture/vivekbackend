@@ -4,16 +4,13 @@ const port = 8080
 
 const app = express()
 
-app.set('view engine' , 'ejs')
-
 app.get('/' , (req , res) => {
-    return res.render('index')
+    return res.send('index page')
 })
 
 app.get('/home' , (req , res) => {
-    return res.render('home')
+    return res.send('home page')
 })
-
 
 app.listen(port , (error) => {
     if(error){
