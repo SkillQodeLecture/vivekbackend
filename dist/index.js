@@ -5,11 +5,11 @@ const port = 8080
 const app = express()
 
 app.get('/' , (req , res) => {
-    return res.send('index page')
+    res.send('index page')
 })
 
 app.get('/home' , (req , res) => {
-    return res.send('home page')
+    res.send('home page')
 })
 
 app.listen(port , (error) => {
